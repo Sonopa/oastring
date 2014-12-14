@@ -1,7 +1,4 @@
 Template.stringInput.helpers({
-  string: function () {
-    return Session.get("string");
-  },
   length: function () {
     return Session.get("string").length;
   },
@@ -18,6 +15,6 @@ Template.stringInput.helpers({
 
 Template.stringInput.events({
   'click button': function (event, template) {
-    Session.set("string", document.getElementById('string').value);
+    Session.set("string", document.getElementById('string').value.trim());
   }
 });

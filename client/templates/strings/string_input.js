@@ -3,7 +3,7 @@ Template.stringInput.helpers({
     return Session.get("string").length;
   },
   words: function () {
-    if (Session.get("string").length == 0) {
+    if (Session.get("string").length === 0) {
       return 0;
     }
     return Session.get("string").split(/\s+\b/).length;    

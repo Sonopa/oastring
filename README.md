@@ -1,4 +1,5 @@
-oastring
+Open Academy application programming assignment
 ========
 
-Open Academy application programming assignment
+http://oastring.meteor.com/
+
